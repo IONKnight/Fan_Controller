@@ -3,22 +3,14 @@
  *
  * Created: 29/01/2013 22:29:26
  *  Author: ION
- */ 
-
-
-/*
- * GccApplication2.c
- *
- * Created: 28/01/2013 21:23:26
- *  Author: ION
- */ 
+ */
 
 #define F_CPU 20000000 
 #include <avr/io.h>
 #include <util/delay.h>
-#define two_one_degree 82
-#define two_two_degree 86
-#define two_four_degree 100
+#define two_one_degree 80
+//#define two_two_degree 90
+#define two_four_degree 90
 #define Temperature ADC
 #define TEMPERATURE_MAX 25
 
@@ -102,25 +94,35 @@ int main()
 	{
 		adc_result0 = adc_read(0);      // read adc value at PA0
 		//adc_result= calibrate_temp(adc_result0);
-		c_temp = adc_result0*TEMPERATURE_MAX;
+		c_temp = (int)adc_result0*100/1023;
 		// condition for led to glow
-		if (adc_result0 > two_two_degree)
+		if (adc_result0 > two_one_degree)
 		{
 				PORTC |= (1<<PORTC0);
-				//_delay_ms(100);
+				_delay_ms(100);
+				PORTC |= (0<<PORTC0);
+				_delay_ms(100);
 		}
 		
 		if (adc_result0 > two_four_degree)
 		{
 				PORTC |= (1<<PORTC0);
 				//_delay_ms(100);
-				PORTC |= (0<<PORTC0);
+				//PORTC |= (0<<PORTC0);
 				//_delay_ms(100);
-				PORTC |= (1<<PORTC0);
+				//PORTC |= (1<<PORTC0);
 		}
 		
 		if (adc_result0 < two_one_degree)
-		PORTC |= (0<<PORTC0);
+		
+				PORTC |= (1<<PORTC0);
+				_delay_ms(100);
+				PORTC |= (0<<PORTC0);
+				_delay_ms(100);
+				PORTC |= (1<<PORTC0);
+				_delay_ms(100);
+				PORTC |= (0<<PORTC0);
+				_delay_ms(100);
 
 	}
 }

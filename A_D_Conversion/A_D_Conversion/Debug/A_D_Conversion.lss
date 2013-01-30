@@ -3,27 +3,27 @@ A_D_Conversion.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000000  00800100  000001d6  0000024a  2**0
+  0 .data         00000000  00800100  00000248  000002bc  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         000001d6  00000000  00000000  00000074  2**1
+  1 .text         00000248  00000000  00000000  00000074  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .stab         000006cc  00000000  00000000  0000024c  2**2
+  2 .stab         000006cc  00000000  00000000  000002bc  2**2
                   CONTENTS, READONLY, DEBUGGING
-  3 .stabstr      00000085  00000000  00000000  00000918  2**0
+  3 .stabstr      00000085  00000000  00000000  00000988  2**0
                   CONTENTS, READONLY, DEBUGGING
-  4 .debug_aranges 00000080  00000000  00000000  000009a0  2**3
+  4 .debug_aranges 00000080  00000000  00000000  00000a10  2**3
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   000003be  00000000  00000000  00000a20  2**0
+  5 .debug_info   00000592  00000000  00000000  00000a90  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 000000ee  00000000  00000000  00000dde  2**0
+  6 .debug_abbrev 00000181  00000000  00000000  00001022  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   000002b4  00000000  00000000  00000ecc  2**0
+  7 .debug_line   00000385  00000000  00000000  000011a3  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  00000054  00000000  00000000  00001180  2**2
+  8 .debug_frame  00000054  00000000  00000000  00001528  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    000000fb  00000000  00000000  000011d4  2**0
+  9 .debug_str    0000014e  00000000  00000000  0000157c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    000000a7  00000000  00000000  000012cf  2**0
+ 10 .debug_loc    0000013c  00000000  00000000  000016ca  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -77,8 +77,8 @@ Disassembly of section .text:
   98:	11 e0       	ldi	r17, 0x01	; 1
   9a:	a0 e0       	ldi	r26, 0x00	; 0
   9c:	b1 e0       	ldi	r27, 0x01	; 1
-  9e:	e6 ed       	ldi	r30, 0xD6	; 214
-  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  9e:	e8 e4       	ldi	r30, 0x48	; 72
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
   a2:	00 e0       	ldi	r16, 0x00	; 0
   a4:	0b bf       	out	0x3b, r16	; 59
   a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
@@ -103,7 +103,7 @@ Disassembly of section .text:
   c0:	b1 07       	cpc	r27, r17
   c2:	e1 f7       	brne	.-8      	; 0xbc <.do_clear_bss_loop>
   c4:	0e 94 d2 00 	call	0x1a4	; 0x1a4 <main>
-  c8:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <_exit>
+  c8:	0c 94 22 01 	jmp	0x244	; 0x244 <_exit>
 
 000000cc <__bad_interrupt>:
   cc:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
@@ -301,45 +301,116 @@ int main()
  1aa:	80 e0       	ldi	r24, 0x00	; 0
  1ac:	0e 94 81 00 	call	0x102	; 0x102 <adc_read>
 		//adc_result= calibrate_temp(adc_result0);
-		c_temp = adc_result0*TEMPERATURE_MAX;
+		c_temp = (int)adc_result0*100/1023;
 		// condition for led to glow
-		if (adc_result0 > two_two_degree)
- 1b0:	87 35       	cpi	r24, 0x57	; 87
+		if (adc_result0 > two_one_degree)
+ 1b0:	81 35       	cpi	r24, 0x51	; 81
  1b2:	91 05       	cpc	r25, r1
- 1b4:	08 f0       	brcs	.+2      	; 0x1b8 <main+0x14>
+ 1b4:	a8 f0       	brcs	.+42     	; 0x1e0 <main+0x3c>
 		{
 				PORTC |= (1<<PORTC0);
  1b6:	40 9a       	sbi	0x08, 0	; 8
-				//_delay_ms(100);
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1b8:	2f e7       	ldi	r18, 0x7F	; 127
+ 1ba:	3a e1       	ldi	r19, 0x1A	; 26
+ 1bc:	46 e0       	ldi	r20, 0x06	; 6
+ 1be:	21 50       	subi	r18, 0x01	; 1
+ 1c0:	30 40       	sbci	r19, 0x00	; 0
+ 1c2:	40 40       	sbci	r20, 0x00	; 0
+ 1c4:	e1 f7       	brne	.-8      	; 0x1be <main+0x1a>
+ 1c6:	00 c0       	rjmp	.+0      	; 0x1c8 <main+0x24>
+ 1c8:	00 00       	nop
+				_delay_ms(100);
+				PORTC |= (0<<PORTC0);
+ 1ca:	28 b1       	in	r18, 0x08	; 8
+ 1cc:	28 b9       	out	0x08, r18	; 8
+ 1ce:	2f e7       	ldi	r18, 0x7F	; 127
+ 1d0:	3a e1       	ldi	r19, 0x1A	; 26
+ 1d2:	46 e0       	ldi	r20, 0x06	; 6
+ 1d4:	21 50       	subi	r18, 0x01	; 1
+ 1d6:	30 40       	sbci	r19, 0x00	; 0
+ 1d8:	40 40       	sbci	r20, 0x00	; 0
+ 1da:	e1 f7       	brne	.-8      	; 0x1d4 <main+0x30>
+ 1dc:	00 c0       	rjmp	.+0      	; 0x1de <main+0x3a>
+ 1de:	00 00       	nop
+				_delay_ms(100);
 		}
 		
 		if (adc_result0 > two_four_degree)
- 1b8:	85 36       	cpi	r24, 0x65	; 101
- 1ba:	91 05       	cpc	r25, r1
- 1bc:	20 f0       	brcs	.+8      	; 0x1c6 <main+0x22>
+ 1e0:	8b 35       	cpi	r24, 0x5B	; 91
+ 1e2:	91 05       	cpc	r25, r1
+ 1e4:	08 f0       	brcs	.+2      	; 0x1e8 <main+0x44>
 		{
 				PORTC |= (1<<PORTC0);
- 1be:	40 9a       	sbi	0x08, 0	; 8
+ 1e6:	40 9a       	sbi	0x08, 0	; 8
+				//PORTC |= (0<<PORTC0);
 				//_delay_ms(100);
-				PORTC |= (0<<PORTC0);
- 1c0:	28 b1       	in	r18, 0x08	; 8
- 1c2:	28 b9       	out	0x08, r18	; 8
-				//_delay_ms(100);
-				PORTC |= (1<<PORTC0);
- 1c4:	40 9a       	sbi	0x08, 0	; 8
+				//PORTC |= (1<<PORTC0);
 		}
 		
 		if (adc_result0 < two_one_degree)
- 1c6:	82 35       	cpi	r24, 0x52	; 82
- 1c8:	91 05       	cpc	r25, r1
- 1ca:	78 f7       	brcc	.-34     	; 0x1aa <main+0x6>
-		PORTC |= (0<<PORTC0);
- 1cc:	88 b1       	in	r24, 0x08	; 8
- 1ce:	88 b9       	out	0x08, r24	; 8
- 1d0:	ec cf       	rjmp	.-40     	; 0x1aa <main+0x6>
+ 1e8:	80 35       	cpi	r24, 0x50	; 80
+ 1ea:	91 05       	cpc	r25, r1
+ 1ec:	08 f4       	brcc	.+2      	; 0x1f0 <main+0x4c>
+		
+				PORTC |= (1<<PORTC0);
+ 1ee:	40 9a       	sbi	0x08, 0	; 8
+ 1f0:	8f e7       	ldi	r24, 0x7F	; 127
+ 1f2:	9a e1       	ldi	r25, 0x1A	; 26
+ 1f4:	a6 e0       	ldi	r26, 0x06	; 6
+ 1f6:	81 50       	subi	r24, 0x01	; 1
+ 1f8:	90 40       	sbci	r25, 0x00	; 0
+ 1fa:	a0 40       	sbci	r26, 0x00	; 0
+ 1fc:	e1 f7       	brne	.-8      	; 0x1f6 <main+0x52>
+ 1fe:	00 c0       	rjmp	.+0      	; 0x200 <main+0x5c>
+ 200:	00 00       	nop
+				_delay_ms(100);
+				PORTC |= (0<<PORTC0);
+ 202:	88 b1       	in	r24, 0x08	; 8
+ 204:	88 b9       	out	0x08, r24	; 8
+ 206:	2f e7       	ldi	r18, 0x7F	; 127
+ 208:	3a e1       	ldi	r19, 0x1A	; 26
+ 20a:	46 e0       	ldi	r20, 0x06	; 6
+ 20c:	21 50       	subi	r18, 0x01	; 1
+ 20e:	30 40       	sbci	r19, 0x00	; 0
+ 210:	40 40       	sbci	r20, 0x00	; 0
+ 212:	e1 f7       	brne	.-8      	; 0x20c <main+0x68>
+ 214:	00 c0       	rjmp	.+0      	; 0x216 <main+0x72>
+ 216:	00 00       	nop
+				_delay_ms(100);
+				PORTC |= (1<<PORTC0);
+ 218:	40 9a       	sbi	0x08, 0	; 8
+ 21a:	8f e7       	ldi	r24, 0x7F	; 127
+ 21c:	9a e1       	ldi	r25, 0x1A	; 26
+ 21e:	a6 e0       	ldi	r26, 0x06	; 6
+ 220:	81 50       	subi	r24, 0x01	; 1
+ 222:	90 40       	sbci	r25, 0x00	; 0
+ 224:	a0 40       	sbci	r26, 0x00	; 0
+ 226:	e1 f7       	brne	.-8      	; 0x220 <main+0x7c>
+ 228:	00 c0       	rjmp	.+0      	; 0x22a <main+0x86>
+ 22a:	00 00       	nop
+				_delay_ms(100);
+				PORTC |= (0<<PORTC0);
+ 22c:	88 b1       	in	r24, 0x08	; 8
+ 22e:	88 b9       	out	0x08, r24	; 8
+ 230:	2f e7       	ldi	r18, 0x7F	; 127
+ 232:	3a e1       	ldi	r19, 0x1A	; 26
+ 234:	46 e0       	ldi	r20, 0x06	; 6
+ 236:	21 50       	subi	r18, 0x01	; 1
+ 238:	30 40       	sbci	r19, 0x00	; 0
+ 23a:	40 40       	sbci	r20, 0x00	; 0
+ 23c:	e1 f7       	brne	.-8      	; 0x236 <main+0x92>
+ 23e:	00 c0       	rjmp	.+0      	; 0x240 <main+0x9c>
+ 240:	00 00       	nop
+ 242:	b3 cf       	rjmp	.-154    	; 0x1aa <main+0x6>
 
-000001d2 <_exit>:
- 1d2:	f8 94       	cli
+00000244 <_exit>:
+ 244:	f8 94       	cli
 
-000001d4 <__stop_program>:
- 1d4:	ff cf       	rjmp	.-2      	; 0x1d4 <__stop_program>
+00000246 <__stop_program>:
+ 246:	ff cf       	rjmp	.-2      	; 0x246 <__stop_program>
