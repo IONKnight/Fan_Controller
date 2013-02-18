@@ -13,17 +13,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   4 .debug_aranges 00000080  00000000  00000000  000008f0  2**3
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   00000418  00000000  00000000  00000970  2**0
+  5 .debug_info   0000041a  00000000  00000000  00000970  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 00000148  00000000  00000000  00000d88  2**0
+  6 .debug_abbrev 00000148  00000000  00000000  00000d8a  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000361  00000000  00000000  00000ed0  2**0
+  7 .debug_line   00000361  00000000  00000000  00000ed2  2**0
                   CONTENTS, READONLY, DEBUGGING
   8 .debug_frame  00000034  00000000  00000000  00001234  2**2
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_str    00000102  00000000  00000000  00001268  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000046  00000000  00000000  0000136a  2**0
+ 10 .debug_loc    00000048  00000000  00000000  0000136a  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -173,8 +173,8 @@ while(1)
 	#endif
 
 	__builtin_avr_delay_cycles(__ticks_dc);
-  f8:	a7 e8       	ldi	r26, 0x87	; 135
-  fa:	b3 e1       	ldi	r27, 0x13	; 19
+  f8:	af e4       	ldi	r26, 0x4F	; 79
+  fa:	b3 ec       	ldi	r27, 0xC3	; 195
   fc:	11 97       	sbiw	r26, 0x01	; 1
   fe:	f1 f7       	brne	.-4      	; 0xfc <main+0x14>
  100:	00 c0       	rjmp	.+0      	; 0x102 <main+0x1a>
@@ -195,14 +195,14 @@ while(1)
 				// set the brightness as duty cycle
 				duty_cycle = brightness;
  10a:	80 83       	st	Z, r24
- 10c:	a7 e8       	ldi	r26, 0x87	; 135
- 10e:	b3 e1       	ldi	r27, 0x13	; 19
+ 10c:	af e4       	ldi	r26, 0x4F	; 79
+ 10e:	b3 ec       	ldi	r27, 0xC3	; 195
  110:	11 97       	sbiw	r26, 0x01	; 1
  112:	f1 f7       	brne	.-4      	; 0x110 <main+0x28>
  114:	00 c0       	rjmp	.+0      	; 0x116 <main+0x2e>
  116:	00 00       	nop
 				duty_cycle = brightness;
-				_delay_ms(1);
+				_delay_ms(10);
 			}
 
 			// decreasing brightness

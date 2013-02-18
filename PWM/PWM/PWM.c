@@ -30,7 +30,7 @@ uint8_t brightness;
 
 pwm_init();
 
-PORTD=0x00;
+//PORTD=0x00;
 
 // for example, this will alternate between 75% and 42% PWM
 while(1)
@@ -40,7 +40,7 @@ while(1)
 			{
 				// set the brightness as duty cycle
 				duty_cycle = brightness;
-				_delay_ms(1);
+				_delay_ms(10);
 			}
 
 			// decreasing brightness
@@ -48,7 +48,7 @@ while(1)
 			{
 				// set the brightness as duty cycle
 				duty_cycle = brightness;
-				_delay_ms(1);
+				_delay_ms(10);
 			}
 
 }

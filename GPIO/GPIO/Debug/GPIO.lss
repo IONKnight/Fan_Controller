@@ -3,9 +3,9 @@ GPIO.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000000  00800100  000000f4  00000168  2**0
+  0 .data         00000000  00800100  000000f2  00000166  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         000000f4  00000000  00000000  00000074  2**1
+  1 .text         000000f2  00000000  00000000  00000074  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   2 .stab         000006cc  00000000  00000000  00000168  2**2
                   CONTENTS, READONLY, DEBUGGING
@@ -75,7 +75,7 @@ Disassembly of section .text:
   98:	11 e0       	ldi	r17, 0x01	; 1
   9a:	a0 e0       	ldi	r26, 0x00	; 0
   9c:	b1 e0       	ldi	r27, 0x01	; 1
-  9e:	e4 ef       	ldi	r30, 0xF4	; 244
+  9e:	e2 ef       	ldi	r30, 0xF2	; 242
   a0:	f0 e0       	ldi	r31, 0x00	; 0
   a2:	00 e0       	ldi	r16, 0x00	; 0
   a4:	0b bf       	out	0x3b, r16	; 59
@@ -101,7 +101,7 @@ Disassembly of section .text:
   c0:	b1 07       	cpc	r27, r17
   c2:	e1 f7       	brne	.-8      	; 0xbc <.do_clear_bss_loop>
   c4:	0e 94 68 00 	call	0xd0	; 0xd0 <main>
-  c8:	0c 94 78 00 	jmp	0xf0	; 0xf0 <_exit>
+  c8:	0c 94 77 00 	jmp	0xee	; 0xee <_exit>
 
 000000cc <__bad_interrupt>:
   cc:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
@@ -112,35 +112,34 @@ Disassembly of section .text:
 
 int main(void)
 {
-	DDRC = (1 << 0x01);
-  d0:	82 e0       	ldi	r24, 0x02	; 2
-  d2:	87 b9       	out	0x07, r24	; 7
+	DDRC |= (1 << 0);
+  d0:	38 9a       	sbi	0x07, 0	; 7
     while(1)
     {
         			PORTC ^= (1 << 0);    // toggles the led
-  d4:	91 e0       	ldi	r25, 0x01	; 1
-  d6:	88 b1       	in	r24, 0x08	; 8
-  d8:	89 27       	eor	r24, r25
-  da:	88 b9       	out	0x08, r24	; 8
+  d2:	91 e0       	ldi	r25, 0x01	; 1
+  d4:	88 b1       	in	r24, 0x08	; 8
+  d6:	89 27       	eor	r24, r25
+  d8:	88 b9       	out	0x08, r24	; 8
 	#else
 		//round up by default
 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
 	#endif
 
 	__builtin_avr_delay_cycles(__ticks_dc);
-  dc:	2f e7       	ldi	r18, 0x7F	; 127
-  de:	3f e4       	ldi	r19, 0x4F	; 79
-  e0:	42 e1       	ldi	r20, 0x12	; 18
-  e2:	21 50       	subi	r18, 0x01	; 1
-  e4:	30 40       	sbci	r19, 0x00	; 0
-  e6:	40 40       	sbci	r20, 0x00	; 0
-  e8:	e1 f7       	brne	.-8      	; 0xe2 <main+0x12>
-  ea:	00 c0       	rjmp	.+0      	; 0xec <main+0x1c>
-  ec:	00 00       	nop
-  ee:	f3 cf       	rjmp	.-26     	; 0xd6 <main+0x6>
+  da:	2f e7       	ldi	r18, 0x7F	; 127
+  dc:	3f e4       	ldi	r19, 0x4F	; 79
+  de:	42 e1       	ldi	r20, 0x12	; 18
+  e0:	21 50       	subi	r18, 0x01	; 1
+  e2:	30 40       	sbci	r19, 0x00	; 0
+  e4:	40 40       	sbci	r20, 0x00	; 0
+  e6:	e1 f7       	brne	.-8      	; 0xe0 <main+0x10>
+  e8:	00 c0       	rjmp	.+0      	; 0xea <main+0x1a>
+  ea:	00 00       	nop
+  ec:	f3 cf       	rjmp	.-26     	; 0xd4 <main+0x4>
 
-000000f0 <_exit>:
-  f0:	f8 94       	cli
+000000ee <_exit>:
+  ee:	f8 94       	cli
 
-000000f2 <__stop_program>:
-  f2:	ff cf       	rjmp	.-2      	; 0xf2 <__stop_program>
+000000f0 <__stop_program>:
+  f0:	ff cf       	rjmp	.-2      	; 0xf0 <__stop_program>
