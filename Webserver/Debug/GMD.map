@@ -1,0 +1,795 @@
+Archive member included because of file (symbol)
+
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+                              sensors/Sensors.o (__divmodhi4)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+                              d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o (exit)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+                              webserver.o (__do_copy_data)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+                              webserver.o (__do_clear_bss)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+                              d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strncmp.o)
+                              webserver.o (strncmp)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+                              webserver.o (sprintf)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+                              d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o) (vfprintf)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+                              d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o) (strnlen_P)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen.o)
+                              d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o) (strnlen)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+                              d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o) (fputc)
+d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+                              d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o) (__ultoa_invert)
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+ .text          0x00000000        0x0 sensors/Comms.o
+ .bss           0x00000000        0x0 sensors/Comms.o
+ .text.LedInit  0x00000000        0x4 sensors/Comms.o
+ .text.LedToggle
+                0x00000000        0xa sensors/Comms.o
+ .text.LedOn    0x00000000        0x4 sensors/Comms.o
+ .text.LedOff   0x00000000        0x6 sensors/Comms.o
+ .text          0x00000000        0x0 sensors/Sensors.o
+ .bss           0x00000000        0x0 sensors/Sensors.o
+ .text          0x00000000        0x0 webserver.o
+ .bss           0x00000000        0x0 webserver.o
+ .text          0x00000000        0x0 net/enc28j60.o
+ .bss           0x00000000        0x0 net/enc28j60.o
+ .text.enc28j60PhyReadH
+                0x00000000       0x32 net/enc28j60.o
+ .text.enc28j60clkout
+                0x00000000        0xc net/enc28j60.o
+ .text.enc28j60getrev
+                0x00000000        0xe net/enc28j60.o
+ .text.enc28j60EnableBroadcast
+                0x00000000       0x12 net/enc28j60.o
+ .text.enc28j60DisableBroadcast
+                0x00000000       0x12 net/enc28j60.o
+ .text.enc28j60linkup
+                0x00000000       0x12 net/enc28j60.o
+ .text.enc28j60hasRxPkt
+                0x00000000       0x12 net/enc28j60.o
+ .text          0x00000000        0x0 net/ip_arp_udp_tcp.o
+ .bss           0x00000000        0x0 net/ip_arp_udp_tcp.o
+ .text.check_ip_message_is_from
+                0x00000000       0x2c net/ip_arp_udp_tcp.o
+ .text.make_udp_reply_from_request_udpdat_ready
+                0x00000000       0x82 net/ip_arp_udp_tcp.o
+ .text.make_udp_reply_from_request
+                0x00000000       0x28 net/ip_arp_udp_tcp.o
+ .progmem.data.arpreqhdr
+                0x00000000        0x8 net/ip_arp_udp_tcp.o
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strncmp.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strncmp.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .text          0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800100         0x0000ff00         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+LOAD sensors/Comms.o
+LOAD sensors/Sensors.o
+LOAD webserver.o
+LOAD net/enc28j60.o
+LOAD net/ip_arp_udp_tcp.o
+START GROUP
+LOAD d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libm.a
+END GROUP
+LOAD d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a
+LOAD d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a
+LOAD d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1532
+ *(.vectors)
+ .vectors       0x00000000       0x8c d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data.__c.2158
+                0x0000008c       0x3f webserver.o
+ .progmem.data.__c.2160
+                0x000000cb       0x10 webserver.o
+ .progmem.data.__c.2165
+                0x000000db       0x3f webserver.o
+ .progmem.data.__c.2168
+                0x0000011a       0x50 webserver.o
+                0x0000016a                . = ALIGN (0x2)
+                0x0000016a                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000016a        0x0 linker stubs
+ *(.trampolines*)
+                0x0000016a                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000016a                __ctors_start = .
+ *(.ctors)
+                0x0000016a                __ctors_end = .
+                0x0000016a                __dtors_start = .
+ *(.dtors)
+                0x0000016a                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000016a        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+                0x0000016a                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000016a        0xc d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000176       0x1a d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+                0x00000176                __do_copy_data
+ .init4         0x00000190       0x10 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+                0x00000190                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000001a0        0x6 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+ *(.init9)
+ *(.text)
+ .text          0x000001a6        0x2 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+                0x000001a6                __vector_22
+                0x000001a6                __vector_28
+                0x000001a6                __vector_1
+                0x000001a6                __vector_32
+                0x000001a6                __vector_34
+                0x000001a6                __vector_24
+                0x000001a6                __vector_12
+                0x000001a6                __bad_interrupt
+                0x000001a6                __vector_6
+                0x000001a6                __vector_31
+                0x000001a6                __vector_3
+                0x000001a6                __vector_23
+                0x000001a6                __vector_30
+                0x000001a6                __vector_25
+                0x000001a6                __vector_11
+                0x000001a6                __vector_13
+                0x000001a6                __vector_17
+                0x000001a6                __vector_19
+                0x000001a6                __vector_7
+                0x000001a6                __vector_27
+                0x000001a6                __vector_5
+                0x000001a6                __vector_33
+                0x000001a6                __vector_4
+                0x000001a6                __vector_9
+                0x000001a6                __vector_2
+                0x000001a6                __vector_21
+                0x000001a6                __vector_15
+                0x000001a6                __vector_29
+                0x000001a6                __vector_8
+                0x000001a6                __vector_26
+                0x000001a6                __vector_14
+                0x000001a6                __vector_10
+                0x000001a6                __vector_16
+                0x000001a6                __vector_18
+                0x000001a6                __vector_20
+                0x000001a8                . = ALIGN (0x2)
+ *(.text.*)
+ .text.pwm_init
+                0x000001a8       0x18 sensors/Comms.o
+                0x000001a8                pwm_init
+ .text.adc_init
+                0x000001c0        0xe sensors/Comms.o
+                0x000001c0                adc_init
+ .text.adc_read
+                0x000001ce       0xa0 sensors/Comms.o
+                0x000001ce                adc_read
+ .text.lm35dz   0x0000026e       0x16 sensors/Sensors.o
+                0x0000026e                lm35dz
+ .text.lm35dz_calibration
+                0x00000284       0x12 sensors/Sensors.o
+                0x00000284                lm35dz_calibration
+ .text.PingCallback
+                0x00000296       0x14 webserver.o
+                0x00000296                PingCallback
+ .text.main     0x000002aa      0x272 webserver.o
+                0x000002aa                main
+ .text.enc28j60ReadOp
+                0x0000051c       0x2a net/enc28j60.o
+                0x0000051c                enc28j60ReadOp
+ .text.enc28j60WriteOp
+                0x00000546       0x1a net/enc28j60.o
+                0x00000546                enc28j60WriteOp
+ .text.enc28j60ReadBuffer
+                0x00000560       0x2e net/enc28j60.o
+                0x00000560                enc28j60ReadBuffer
+ .text.enc28j60WriteBuffer
+                0x0000058e       0x30 net/enc28j60.o
+                0x0000058e                enc28j60WriteBuffer
+ .text.enc28j60SetBank
+                0x000005be       0x4a net/enc28j60.o
+                0x000005be                enc28j60SetBank
+ .text.enc28j60Read
+                0x00000608       0x10 net/enc28j60.o
+                0x00000608                enc28j60Read
+ .text.enc28j60Write
+                0x00000618       0x18 net/enc28j60.o
+                0x00000618                enc28j60Write
+ .text.enc28j60PhyWrite
+                0x00000630       0x32 net/enc28j60.o
+                0x00000630                enc28j60PhyWrite
+ .text.enc28j60Init
+                0x00000662      0x10a net/enc28j60.o
+                0x00000662                enc28j60Init
+ .text.enc28j60PacketSend
+                0x0000076c       0x6c net/enc28j60.o
+                0x0000076c                enc28j60PacketSend
+ .text.enc28j60PacketReceive
+                0x000007d8      0x106 net/enc28j60.o
+                0x000007d8                enc28j60PacketReceive
+ .text.checksum
+                0x000008de       0xe0 net/ip_arp_udp_tcp.o
+                0x000008de                checksum
+ .text.init_mac
+                0x000009be       0x16 net/ip_arp_udp_tcp.o
+                0x000009be                init_mac
+ .text.eth_type_is_arp_and_my_ip
+                0x000009d4       0x5a net/ip_arp_udp_tcp.o
+                0x000009d4                eth_type_is_arp_and_my_ip
+ .text.eth_type_is_ip_and_my_ip
+                0x00000a2e       0x64 net/ip_arp_udp_tcp.o
+                0x00000a2e                eth_type_is_ip_and_my_ip
+ .text.make_eth
+                0x00000a92       0x26 net/ip_arp_udp_tcp.o
+                0x00000a92                make_eth
+ .text.fill_ip_hdr_checksum
+                0x00000ab8       0x28 net/ip_arp_udp_tcp.o
+                0x00000ab8                fill_ip_hdr_checksum
+ .text.make_ip  0x00000ae0       0x2a net/ip_arp_udp_tcp.o
+                0x00000ae0                make_ip
+ .text.step_seq
+                0x00000b0a       0x2a net/ip_arp_udp_tcp.o
+                0x00000b0a                step_seq
+ .text.make_tcphead
+                0x00000b34       0x28 net/ip_arp_udp_tcp.o
+                0x00000b34                make_tcphead
+ .text.make_arp_answer_from_request
+                0x00000b5c       0x60 net/ip_arp_udp_tcp.o
+                0x00000b5c                make_arp_answer_from_request
+ .text.make_echo_reply_from_request
+                0x00000bbc       0x34 net/ip_arp_udp_tcp.o
+                0x00000bbc                make_echo_reply_from_request
+ .text.get_tcp_data_len
+                0x00000bf0       0x2c net/ip_arp_udp_tcp.o
+                0x00000bf0                get_tcp_data_len
+ .text.fill_tcp_data_p
+                0x00000c1c       0x3e net/ip_arp_udp_tcp.o
+                0x00000c1c                fill_tcp_data_p
+ .text.fill_tcp_data_len
+                0x00000c5a       0x2a net/ip_arp_udp_tcp.o
+                0x00000c5a                fill_tcp_data_len
+ .text.fill_tcp_data
+                0x00000c84       0x16 net/ip_arp_udp_tcp.o
+                0x00000c84                fill_tcp_data
+ .text.make_tcp_ack_from_any
+                0x00000c9a       0x6e net/ip_arp_udp_tcp.o
+                0x00000c9a                make_tcp_ack_from_any
+ .text.make_tcp_ack_with_data_noflags
+                0x00000d08       0x40 net/ip_arp_udp_tcp.o
+                0x00000d08                make_tcp_ack_with_data_noflags
+ .text.init_udp_or_www_server
+                0x00000d48       0x22 net/ip_arp_udp_tcp.o
+                0x00000d48                init_udp_or_www_server
+ .text.www_server_port
+                0x00000d6a        0xa net/ip_arp_udp_tcp.o
+                0x00000d6a                www_server_port
+ .text.make_tcp_synack_from_syn
+                0x00000d74       0x68 net/ip_arp_udp_tcp.o
+                0x00000d74                make_tcp_synack_from_syn
+ .text.www_server_reply
+                0x00000ddc       0x2c net/ip_arp_udp_tcp.o
+                0x00000ddc                www_server_reply
+ .text.register_ping_rec_callback
+                0x00000e08        0xa net/ip_arp_udp_tcp.o
+                0x00000e08                register_ping_rec_callback
+ .text.packetloop_arp_icmp_tcp
+                0x00000e12      0x126 net/ip_arp_udp_tcp.o
+                0x00000e12                packetloop_arp_icmp_tcp
+ .text.libgcc.div
+                0x00000f38       0x26 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+                0x00000f38                _div
+                0x00000f38                __divmodhi4
+ .text.libgcc.div
+                0x00000f5e       0x28 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+                0x00000f5e                __udivmodhi4
+ .text.avr-libc
+                0x00000f86       0x1c d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strncmp.o)
+                0x00000f86                strncmp
+ .text.avr-libc
+                0x00000fa2       0x5c d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+                0x00000fa2                sprintf
+ .text.avr-libc
+                0x00000ffe      0x3f0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+                0x00000ffe                vfprintf
+ .text.avr-libc
+                0x000013ee       0x16 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+                0x000013ee                strnlen_P
+ .text.avr-libc
+                0x00001404       0x16 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen.o)
+                0x00001404                strnlen
+ .text.avr-libc
+                0x0000141a       0x58 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+                0x0000141a                fputc
+ .text.avr-libc
+                0x00001472       0xbc d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+                0x00001472                __ultoa_invert
+                0x0000152e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000152e        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+                0x0000152e                _exit
+                0x0000152e                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000152e        0x4 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001532                _etext = .
+
+.data           0x00800100       0xba load address 0x00001532
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+ .data          0x00800100        0x0 sensors/Comms.o
+ .data          0x00800100        0x0 sensors/Sensors.o
+ .data          0x00800100        0x0 webserver.o
+ .data          0x00800100        0x0 net/enc28j60.o
+ .data          0x00800100        0x0 net/ip_arp_udp_tcp.o
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_divmodhi4.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strncmp.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .data          0x00800100        0x0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+ *(.data*)
+ .data.mymac    0x00800100        0x6 webserver.o
+ .data.myip     0x00800106        0x4 webserver.o
+ .data.wwwport_l
+                0x0080010a        0x1 net/ip_arp_udp_tcp.o
+ .data.seqnum   0x0080010b        0x1 net/ip_arp_udp_tcp.o
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0080010c       0xae webserver.o
+ *(.gnu.linkonce.d*)
+                0x008001ba                . = ALIGN (0x2)
+                0x008001ba                _edata = .
+                0x008001ba                PROVIDE (__data_end, .)
+
+.bss            0x008001ba      0x20b
+                0x008001ba                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.nPingCount
+                0x008001ba        0x2 webserver.o
+ .bss.buf       0x008001bc      0x1f5 webserver.o
+ .bss.nAccessCount
+                0x008003b1        0x2 webserver.o
+ .bss.Enc28j60Bank
+                0x008003b3        0x1 net/enc28j60.o
+ .bss.gNextPacketPtr
+                0x008003b4        0x2 net/enc28j60.o
+ .bss.macaddr   0x008003b6        0x6 net/ip_arp_udp_tcp.o
+ .bss.ipaddr    0x008003bc        0x4 net/ip_arp_udp_tcp.o
+ .bss.wwwport_h
+                0x008003c0        0x1 net/ip_arp_udp_tcp.o
+ .bss.info_data_len
+                0x008003c1        0x2 net/ip_arp_udp_tcp.o
+ .bss.icmp_callback
+                0x008003c3        0x2 net/ip_arp_udp_tcp.o
+ *(COMMON)
+                0x008003c5                PROVIDE (__bss_end, .)
+                0x00001532                __data_load_start = LOADADDR (.data)
+                0x000015ec                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008003c5        0x0
+                0x008003c5                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008003c5                PROVIDE (__noinit_end, .)
+                0x008003c5                _end = .
+                0x008003c5                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000      0xd44
+ *(.stab)
+ .stab          0x00000000      0x6cc d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+ .stab          0x000006cc       0xc0 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strncmp.o)
+                                 0xcc (size before relaxing)
+ .stab          0x0000078c       0x9c d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x00000828       0x9c d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strnlen.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x000008c4      0x480 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+                                0x48c (size before relaxing)
+
+.stabstr        0x00000000      0x273
+ *(.stabstr)
+ .stabstr       0x00000000      0x273 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm1284.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f sensors/Comms.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 sensors/Sensors.o
+ .comment       0x00000000       0x30 webserver.o
+ .comment       0x00000000       0x30 net/enc28j60.o
+ .comment       0x00000000       0x30 net/ip_arp_udp_tcp.o
+ .comment       0x00000000       0x30 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .comment       0x00000000       0x30 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .comment       0x00000000       0x30 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x290
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x50 sensors/Comms.o
+ .debug_aranges
+                0x00000050       0x28 sensors/Sensors.o
+ .debug_aranges
+                0x00000078       0x28 webserver.o
+ .debug_aranges
+                0x000000a0       0xa8 net/enc28j60.o
+ .debug_aranges
+                0x00000148       0xe8 net/ip_arp_udp_tcp.o
+ .debug_aranges
+                0x00000230       0x20 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .debug_aranges
+                0x00000250       0x20 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .debug_aranges
+                0x00000270       0x20 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x2d1b
+ *(.debug_info)
+ .debug_info    0x00000000      0x126 sensors/Comms.o
+ .debug_info    0x00000126      0x106 sensors/Sensors.o
+ .debug_info    0x0000022c      0x78e webserver.o
+ .debug_info    0x000009ba      0xc99 net/enc28j60.o
+ .debug_info    0x00001653      0xe07 net/ip_arp_udp_tcp.o
+ .debug_info    0x0000245a      0x204 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .debug_info    0x0000265e      0x549 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .debug_info    0x00002ba7      0x174 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xbb3
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x7a sensors/Comms.o
+ .debug_abbrev  0x0000007a       0xb3 sensors/Sensors.o
+ .debug_abbrev  0x0000012d      0x22b webserver.o
+ .debug_abbrev  0x00000358      0x20e net/enc28j60.o
+ .debug_abbrev  0x00000566      0x25c net/ip_arp_udp_tcp.o
+ .debug_abbrev  0x000007c2      0x12a d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .debug_abbrev  0x000008ec      0x1d6 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .debug_abbrev  0x00000ac2       0xf1 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+
+.debug_line     0x00000000     0x1bfe
+ *(.debug_line)
+ .debug_line    0x00000000      0x1d5 sensors/Comms.o
+ .debug_line    0x000001d5       0xfe sensors/Sensors.o
+ .debug_line    0x000002d3      0x3ad webserver.o
+ .debug_line    0x00000680      0x66b net/enc28j60.o
+ .debug_line    0x00000ceb      0x921 net/ip_arp_udp_tcp.o
+ .debug_line    0x0000160c      0x194 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .debug_line    0x000017a0      0x35a d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .debug_line    0x00001afa      0x104 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+
+.debug_frame    0x00000000      0x67c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x84 sensors/Comms.o
+ .debug_frame   0x00000084       0x34 sensors/Sensors.o
+ .debug_frame   0x000000b8       0x48 webserver.o
+ .debug_frame   0x00000100      0x1b8 net/enc28j60.o
+ .debug_frame   0x000002b8      0x2c8 net/ip_arp_udp_tcp.o
+ .debug_frame   0x00000580       0x40 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .debug_frame   0x000005c0       0x84 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .debug_frame   0x00000644       0x38 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+
+.debug_str      0x00000000      0x854
+ *(.debug_str)
+ .debug_str     0x00000000       0xd6 sensors/Comms.o
+                                0x10a (size before relaxing)
+ .debug_str     0x000000d6       0x3a sensors/Sensors.o
+                                0x100 (size before relaxing)
+ .debug_str     0x00000110      0x1b0 webserver.o
+                                0x2a4 (size before relaxing)
+ .debug_str     0x000002c0      0x183 net/enc28j60.o
+                                0x281 (size before relaxing)
+ .debug_str     0x00000443      0x23c net/ip_arp_udp_tcp.o
+                                0x3f2 (size before relaxing)
+ .debug_str     0x0000067f       0xa6 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+                                0x13c (size before relaxing)
+ .debug_str     0x00000725       0xcd d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+                                0x1ad (size before relaxing)
+ .debug_str     0x000007f2       0x62 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+                                0x10d (size before relaxing)
+
+.debug_loc      0x00000000     0x223b
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xd0 sensors/Comms.o
+ .debug_loc     0x000000d0       0x5f sensors/Sensors.o
+ .debug_loc     0x0000012f      0x1d5 webserver.o
+ .debug_loc     0x00000304      0x772 net/enc28j60.o
+ .debug_loc     0x00000a76     0x104e net/ip_arp_udp_tcp.o
+ .debug_loc     0x00001ac4       0x61 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .debug_loc     0x00001b25      0x623 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .debug_loc     0x00002148       0xf3 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x258
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x40 sensors/Comms.o
+ .debug_ranges  0x00000040       0x18 sensors/Sensors.o
+ .debug_ranges  0x00000058       0x30 webserver.o
+ .debug_ranges  0x00000088       0xb0 net/enc28j60.o
+ .debug_ranges  0x00000138       0xf0 net/ip_arp_udp_tcp.o
+ .debug_ranges  0x00000228       0x10 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(sprintf.o)
+ .debug_ranges  0x00000238       0x10 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+ .debug_ranges  0x00000248       0x10 d:/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(fputc.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(GMD.elf elf32-avr)
+LOAD linker stubs
